@@ -1,0 +1,50 @@
+type Movie {
+  id: Int
+  adult: Boolean
+  backdrop_path: String
+  belongs_to_collection: String
+  budget: Int
+  genres: [Genre]
+  homepage: String
+  imdb_id: String
+  original_language: String
+  original_title: String
+  overview: String
+  popularity: Float
+  poster_path: String
+  production_companies: [ProductionCompany]
+  production_countries: [ProductionCountry]
+  release_date: String
+  revenue: Int
+  runtime: Int
+  spoken_languages: [SpokenLanguage]
+  status: String
+  tagline: String
+  title: String
+  video: Boolean
+  vote_average: Float
+  vote_count: Int
+}
+
+type Genre {
+  id: Int
+  name: String
+}
+
+type ProductionCompany {
+  id: Int
+  logo_path: String
+  name: String
+  origin_country: String
+}
+
+type ProductionCountry {
+  iso_3166_1: String
+  name: String
+}
+
+type SpokenLanguage {
+  english_name: String
+  iso_639_1: String
+  name: String
+}

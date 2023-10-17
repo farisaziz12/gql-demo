@@ -1,0 +1,4 @@
+type Query {
+  searchMovies(keyword: String!): [Movie]!
+  getMovieById(id: Int!): Movie
+}

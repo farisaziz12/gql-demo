@@ -1,0 +1,6 @@
+query GetMovieById($id: Int!) {
+  getMovieById(id: $id) {
+    id
+  }
+}
+

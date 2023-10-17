@@ -1,0 +1,7 @@
+type Mutation {
+    createMovie(input: CreateMovieInput!): Movie
+}
+
+input CreateMovieInput {
+    title: String!
+}
